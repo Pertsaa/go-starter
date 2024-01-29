@@ -2,3 +2,4 @@ bin/
 tmp/
 
 .env
+.DS_Store
