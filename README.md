@@ -1,4 +1,6 @@
-# Create docker images
+# Go Backend Template
+
+## Create docker images
 
 ```
 docker build -t go-starter:email -f ./build/Dockerfile.email .
@@ -10,4 +12,22 @@ docker build -t go-starter:worker -f ./build/Dockerfile.worker .
 
 ```
 go list -m -u all
+```
+
+## Run tests
+
+```
+go test -v -cover ./...
+```
+
+## Run security checks
+
+```
+gosec ./...
+```
+
+## Lint
+
+```
+staticcheck ./...
 ```
